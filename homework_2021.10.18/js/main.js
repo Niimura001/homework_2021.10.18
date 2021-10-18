@@ -1,3 +1,4 @@
+//問題１　配列作成
 let array = [2, 4, 7, 5, 4, 3, 8];
 let result = array.filter( function (value, index, array) {
     // indexを比較し、重複データを排除
@@ -7,7 +8,7 @@ let result = array.filter( function (value, index, array) {
 console.log('result: '+ result);
 //https://www.fenet.jp/dotnet/column/language/7232/
 
-//うるう年の判定
+//問題２　うるう年の判定
 function isLeapYear(year){
   if( (year % 4 === 0 && year % 100 !== 0) || year % 400 === 0) {
     return true;
@@ -26,3 +27,4 @@ if (isLeapYear(check)) {
 } else {
   console.log(check + '年はうるう年ではありません');
 }
+//https://techacademy.jp/magazine/27156
